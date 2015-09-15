@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60164A1D1BA8264A0046751E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60164A1C1BA8264A0046751E /* OpenGLES.framework */; };
+		60164A1F1BA826500046751E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60164A1E1BA826500046751E /* Foundation.framework */; };
+		60164A211BA826580046751E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60164A201BA826580046751E /* QuartzCore.framework */; };
+		60164A231BA826850046751E /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60164A221BA826850046751E /* GLView.m */; };
+		60164A261BA826B30046751E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60164A251BA826B30046751E /* UIKit.framework */; };
 		6087E5AB1B8F14230085B16D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6087E5AA1B8F14230085B16D /* main.m */; };
 		6087E5AE1B8F14230085B16D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6087E5AD1B8F14230085B16D /* AppDelegate.m */; };
 		6087E5B11B8F14230085B16D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6087E5B01B8F14230085B16D /* ViewController.m */; };
@@ -27,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60164A1C1BA8264A0046751E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		60164A1E1BA826500046751E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		60164A201BA826580046751E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		60164A221BA826850046751E /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		60164A241BA826920046751E /* GLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		60164A251BA826B30046751E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6087E5A51B8F14230085B16D /* CTGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6087E5A91B8F14230085B16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6087E5AA1B8F14230085B16D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60164A261BA826B30046751E /* UIKit.framework in Frameworks */,
+				60164A211BA826580046751E /* QuartzCore.framework in Frameworks */,
+				60164A1F1BA826500046751E /* Foundation.framework in Frameworks */,
+				60164A1D1BA8264A0046751E /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,10 @@
 		6087E59C1B8F14230085B16D = {
 			isa = PBXGroup;
 			children = (
+				60164A251BA826B30046751E /* UIKit.framework */,
+				60164A201BA826580046751E /* QuartzCore.framework */,
+				60164A1E1BA826500046751E /* Foundation.framework */,
+				60164A1C1BA8264A0046751E /* OpenGLES.framework */,
 				6087E5A71B8F14230085B16D /* CTGames */,
 				6087E5C11B8F14230085B16D /* CTGamesTests */,
 				6087E5A61B8F14230085B16D /* Products */,
@@ -89,6 +108,8 @@
 				6087E5B51B8F14230085B16D /* Images.xcassets */,
 				6087E5B71B8F14230085B16D /* LaunchScreen.xib */,
 				6087E5A81B8F14230085B16D /* Supporting Files */,
+				60164A221BA826850046751E /* GLView.m */,
+				60164A241BA826920046751E /* GLView.h */,
 			);
 			path = CTGames;
 			sourceTree = "<group>";
@@ -220,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6087E5B11B8F14230085B16D /* ViewController.m in Sources */,
+				60164A231BA826850046751E /* GLView.m in Sources */,
 				6087E5AE1B8F14230085B16D /* AppDelegate.m in Sources */,
 				6087E5AB1B8F14230085B16D /* main.m in Sources */,
 			);
@@ -418,6 +440,7 @@
 				6087E5CA1B8F14230085B16D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6087E5CB1B8F14230085B16D /* Build configuration list for PBXNativeTarget "CTGamesTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +449,7 @@
 				6087E5CD1B8F14230085B16D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

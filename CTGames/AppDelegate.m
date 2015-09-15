@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "GLView.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    viewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
+    viewController.wantsFullScreenLayout = YES;
+    viewController.view = [[GLView alloc] initWithFrame:[self.window bounds]];
+    
+    [self.window setRootViewController:viewController];
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
+    [self draw];
+
     return YES;
+}
+
+- (void)draw {
+    glViewport(0, 0, 720, 1280);
+    glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+    glClear( GL_COLOR_BUFFER_BIT );
+    glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+    
+    [(GLView *)viewController.view presentFramebuffer];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

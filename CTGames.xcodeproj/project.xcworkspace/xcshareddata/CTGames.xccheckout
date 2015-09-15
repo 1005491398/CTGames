@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C72FECC1-0FC2-451E-A548-745DB177D3BC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>CTGames</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>908F948394190D04EB3B0287E2C62D514537AA4D</key>
 		<string>https://github.com/1005491398/CTGames.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CTGames.xcodeproj</string>
+	<string>CTGames.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>908F948394190D04EB3B0287E2C62D514537AA4D</key>
